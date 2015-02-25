@@ -1,0 +1,18 @@
+*************************************************************************
+use visudo and vipw to edit the /etc/sudoers and the /etc/password files.
+visudo validates the configuration file before saving it.
+*************************************************************************
+- usermod -G {groupName} {username} ; change the user's primary groupname
+
+- groups {username} ; list the groups that the user belongs to.
+  id {username} ; display info about a user
+ - groups ; list all groups
+ -usermod -a -G {group1, group2,ftp,} {username}
+ 
+ - userdel -r username ; remove a user and delete the home directory.
+ 
+ 
+ 
+ 
+ * You can change the default text editor using this command and choosing from the menu
+  sudo update-alternatives --config editor
