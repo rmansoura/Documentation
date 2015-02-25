@@ -1,0 +1,72 @@
+Debian Package Management:
+==========================
+- /etc/apt/sources.list ; has a list of repository that apt-get uses to install packages.
+ . you can add 3rd party repositoris in here (trusted ones)
+ 
+ 1) apt-get update ; update the repositories infor
+ 2) apt-cache search apache2 
+ 3) apt-get install apache2
+ 4) apt-get clean ; cleans out temp files that is no longer needed
+ 5) apt-get auto-clean;
+ 6) apt-get install -s php ; simulate the install without installing the pacakge
+ 7) apt-get install -y php ; answers yes to the prompt
+ 8) apt-get install -q php ; supresses output to the screen
+ 9) apt-get source php5 ; downloads the source file to the current directory.
+ 10) apt-get upgrade ; upgrades packages.
+ 11) apt-get dist-upgrade ; upgrades the entire system
+ =========================================================
+ 
+ apt-get update ; refreshes or updates the repository cache.
+ apt-cache stats
+ apt-cache depends apache2 ; find out package dependencies
+ apt-cace pkgnames ; list all package names inside our repository
+ apt-cache unmet ; list packages that didn't meet dependancies
+ check apt-cache -h for more info
+ ======================================
+ - dpkg --get-selections ; displays all packages installed on the system
+ 
+ - dkpg -L apache2 ; list the files installed with a package
+ - dkpg-reconfigure {packagename}
+ - 
+- dpkg --remove {packagename} remove everything except config files.
+ - dpkg --purge {package naem} remove package including config files
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ cat /etc/issue
+ uname -a
+ apt-get -f upgrade ; f stands for fix brocken packages, get dependancies. use that if installing a package via dpkg fails.
+ 
+ 
+ 
+ 
+ 
+ 
