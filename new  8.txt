@@ -1,0 +1,52 @@
+Linux System Architecture and Management:
+========================================
+/sys, /proc, /dev and /var
+=========================================
+cd /sys ; a virtual file system for the devices connected to your system.
+ll
+cd /proc ; a virtual file system for the information about the running processes
+ll
+ cat filesystems
+ 
+ cd /dev  ; special files that are direct hardware reference to the devices that are connected
+ ll
+ 
+ cd /var ; contains variable files that change...
+ --------------------------------
+ lsmod ; list installed modules on our system
+  lsmod 
+ same as cat /proc/modules
+ ; you can grep for the module you are looking for
+ =====================================================
+ lspci and lsusb [discover the modules loaded in your system
+ ------------------------------------------------------
+ lspci | grep VGA
+ lspci -v | grep VGA ; get more verbose, if you add another v, you get more info
+ lspci -n | grep VGA ; remove all the name formating from the output
+ lspci -x | grep VGA ; five more hex info
+ lspci -b | grep VGA  ; give bus info
+ lspci -s {venderID} i.e 00:15 is the vendor id of VMWare
+ lspci -m ; output a nicer formated output
+ lspci --version 
+ cd /usr/share/hwdata/pci.ids   ; list the device vender IDs
+ 
+ lspci -t ; gives a tree view
+ lsusb -t ; give a tree view of bug
+ ===================================
+ modprobe and insmod
+ -----------------------
+ modeprobe --version
+    module-init-tools version 3.16
+modprobe -l | less ; all potential modules that can be installed on the system
+modprobe -r jfs  ; no output is a good sign of success . the same ad rmmod jfs
+modprobe -l | grep jfs it will be there in the output.
+lsmod | grep jfs
+modprobe jfs ; load the jfs module
+insmod requires a full path to the module.
+======================================
+FHS version 2.3 dates back to 2004
+version 3.0 is still a draft 
+
+	
+ 
+ 
