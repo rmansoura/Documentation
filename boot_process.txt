@@ -1,0 +1,29 @@
+Linux Boot Process:
+============
+1) BIOS (Basic Input/Output System.) 
+    performs some system integrity checks (POST-Power On Self Test)
+	searchs, loads and executes the boot loader program and gives control to it.
+2) MBR (Master Boot Record) is located in the first sector of the bootable disk.
+    MBR is less than 512 bytes in size. this has three components
+	 1) primary boot loader info - 446 bytes
+	 2) partition table info - 64 bytes *16,16,16,16) 4 partitions
+	 3) magic numbers - 2 bytes
+    MBR loads and executes the GRUB boot loader
+
+3) GRUB (Grand Unified BootLoader)
+	it loads and executes kernel and inited images and give control to the kernel
+
+4) KERNEL	once loaded into RAM it always resides on RAM until the machine is shutdown.
+  it starts its operations by executing INIT process.
+ 
+5) INIT (INITIALIZATION)
+  . looks at the /etc/inittab file to decide the run level.
+  
+  .
+ 6) RUNLEVEL programs
+ Run level0 - /ect/rc.d/rc0.d/
+ Run level 1 - /ect/rc.d/rc1.d
+ .......................
+ ............6            6
+ 
+ 
