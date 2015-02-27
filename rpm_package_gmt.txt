@@ -1,0 +1,60 @@
+RPM package Management
+=====================
+rpm -i ; install
+rpm -e ; remove
+rpm -ivh nano
+rpm -q nano ; query the packagename.
+rpm -qi naon ; query installed package.
+rpm -q --list nano ; shows all the files associated with the package nano.
+rpm   -qpl
+rpm -qR nano ; check package requirements
+rpm --rebuilddb ;rebuilds/updtes the rpm database
+cd /usr/lib/rpm/  and edit the rpmrc. you can also configure rpmrc on the user level as
+/var/log/rpmpkgs.
+===========================================
+YUM is originally created by the yellow dog distribution.
+its configuration file is /etc/yum.conf
+cd /etc/yum.repos.d/ has a list of repos.
+yum update ; update the update database
+yum check update ; check for new updates
+yum search http ; search for http packabe.
+yum upgrade
+yum remove http
+yum list http ; display info about a package
+yum info http 
+yum depend   ; show package dependencies
+yum clean
+yum clean all  ; remove unneeded packages and libraries
+
+====================================================
+yumdownloader & rpm2cpio
+if you want to just download a package
+yumdownloader httpd
+yumdoownloader --resolve httpd  ; resolve dependencies
+
+rpm2cpio packagename  | cpio -t ; list the conents of the rpm package
+================================================================
+Disk Quotas
+-----------
+************preparing the system for quota************
+1) sudo apt-get install quota quotatool
+2) edit /etc/fstab and enable quota by adding these two options
+     userquota,grpquota
+3) touch /quota.user /quota.group
+   chmod  600 /quota.*
+4) sudo mount -o remount /
+5) sudo quotacheck -avugm ; builds a database of the filesystem that we check against.
+							; run this command via cron job
+============================================================================
+edquota  ; assign a quota to a user
+sudo adduser ar
+edquota ar  ; check the quota for user ar
+repquota ; do a reporting on a filesystem
+repquota -s /
+equota ar   [ inode  soft   hard ]
+
+ 
+   
+
+
+

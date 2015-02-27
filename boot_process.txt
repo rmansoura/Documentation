@@ -25,5 +25,18 @@ Linux Boot Process:
  Run level 1 - /ect/rc.d/rc1.d
  .......................
  ............6            6
+ =====================================
+ xz Compression
+   xz, bzip2, gzip are new compression utilities
+   xz has a better compression.
+   
+   xz -z filename
+   
+  
+gzip file1  creates file1.gz  use gunzip file1.gz to decompress the file
+for directories, use tar to archive a directory   tar -cvzf homedir.tar.gz home
+ 
+   
+   
  
  

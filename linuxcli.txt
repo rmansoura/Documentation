@@ -1,0 +1,30 @@
+
+!! represent the last command you run
+!$ represents the last argument from your last command.
+$? exit status of a command
+stat filename ; shows the acces, modify and change time of the time
+ls -i filename  ; display the inode info of the file.
+
+command chaining using ;   ping -c3 google.com ; ifconfig
+#anything you do from the command line, you can do from a script
+send stderr/output to /dev/null to hide it from users
+wget cnn.com 2> /dev/null
+
+You can add a pause in your script via this command
+
+read -p "Press <enter> to continue."
+#read -p will wait for user input and it will read it
+
+ln [options]  source  link
+ln /etc/hosts hosts_link_file ; when you make a change to the hard link it is reflected to the other.
+
+ln -s /etc/hosts symbolic_link_file_to_hosts
+ln -is /var/log/syslog symbolic_link_file_to_hosts
+; point the link to another location
+ln -fs /etc/hosts  symbolic_link_file_to_hosts
+
+inode is a reference to the data structure of a file.
+softlinks can traverse file system
+they save on storage
+
+
