@@ -1,0 +1,35 @@
+Check OpenSource Server:
+=========================
+
+1) need to have a fully qualified domain name [hostname -f].
+2) download and install the check server package
+3) run chef-server-ctl reconfigure
+4) chef-server-ctl test
+5) connect to the gui admin 
+6) change the password and click save user
+* There is no getting started package that you can download as in chef hosted.
+* instead we need to do some manual configuration.
+=================================================
+
+Install check workstation
+====================
+curl -L https://www.opscode.com/chef/install.sh | sudo bash
+
+download the chef repo from github
+================================
+git clone https://github.com/opscode/chef-repo
+configure knife cli
+knife configure
+=================
+after the wizard is done, you need to make sure the keys are in place.
+go to the server admin page, clients tab and users tab
+- clients tab, select client-validator, edit, generate the key and click save client.
+ Now, the private key is show, copy it and save it inside /root/chef-repo/.chef/chef-validator.pem
+ - users tab ,create a new user, copy the private key and place it in /root/chef-repo/.chef/rmansoura.pem
+ =======================================
+ test knife connect with the command knife client list
+ 
+ test bootstrating a new node.
+ need to enable root login for the first time
+ chef client 
+ 
