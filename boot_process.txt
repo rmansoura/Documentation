@@ -35,6 +35,26 @@ Linux Boot Process:
   
 gzip file1  creates file1.gz  use gunzip file1.gz to decompress the file
 for directories, use tar to archive a directory   tar -cvzf homedir.tar.gz home
+====================================
+GPT = GUID Partition Table
+GUID = Globally Unique Identifier
+---------------------
+with GPT we can have 128 Unique Primary Partitions *GUID)
+with partitions size of up to 9.4 ZB [ TB, PB, EB, ZB)
+part of UEFI (unified extensible Firmware Interface) replacing BIOS
+using GDISK to create partitions
+
+
+
+BIOS 
+MBR and
+FDISK
+are going away
+
+use blkid to list all block device on your system by uuid
+==========================================
+
+
  
    
    
