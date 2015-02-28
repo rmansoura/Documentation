@@ -29,7 +29,7 @@ go to the server admin page, clients tab and users tab
  =======================================
  test knife connect with the command knife client list
  
- test bootstrating a new node.
+ test bootstraping a new node.
  need to enable root login for the first time
  chef client 
  
