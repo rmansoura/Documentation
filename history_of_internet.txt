@@ -1,0 +1,159 @@
+Data Transfer with Leased Lines
+ cost was based on distance
+ 
+ Store and Forward Networking 
+    the sole imputes was to keep the cost to minimal
+	
+	Typically specialized in Mail, Email could make it across the country in 6 hours to about 2 days.
+	You generally focused your life on one computer . Early 1980;s
+	messages [data] were stored locally on disk before sending them
+   ====================
+  =BITNET typically specialized in Mail.
+	======
+	DARPA NET Research Networks 1960-1980's
+	. How can we avoid having a direct connection between all pairs of computers or long snake-like connections.
+	. How can we dynamizally handle outages switching between multiple paths.
+	. How t otransport many messages simultaneously and efficiently?
+	* motivation for development is people and keeping them connected.
+	
+ The difference between BITNET and ARPA net was about packet switching
+ 
+ Efficient Message Transmission: Packet Switching
+  . Challenge: in a simple approach lie store and forward. lare messages block small ones.
+  . Break each message into packets.
+  . Can allow the packets from a single message to travel over different paths, dynamically.
+  . router were introducted.
+  ananlogy: if you want to send a large message using postcards.
+   you put a piece of the meassage on each card and use a sequence number to label the piece of the messgae.
+     Hello there. have a nice day
+	 Hello ther(, csev. dfh)
+	 e, have a (2. dalk)
+	 nice day. (3, dfhlkfd0)
+	 then put all cards in the mailbox for the mailman to come and pick them
+	 these postcards can take different paths.
+	 88888888888888888888888888888888888888888888888888888
+	 packets are about breaking a message into small pieces, labeling them
+	 individually and throwing them at the network
+	 packets get reassembled on the other end using the from, to and the sequence number
+	 ================================================
+	 the ARPANET was very quick..
+	 
+	 Urbana champgen IL
+	 Supercomputers.
+	 The national Science Foundation and the notion of shared network
+	 
+	 NCSA 
+	 how did NCSA started
+	 
+	 NSF Net
+	 ==============
+	 NSFNet was funded by the National Science Foundation
+	 standardized on TCP/IP
+	 the first national TCP/IP network that was "inclusive"
+	 . Initially the goal was al lresearch universities.
+	 =========================
+	 NSFnet 
+	 ==================
+	 
+	 lo and behond
+	 the l and o are the firt two packets that were send on the internet
+	 from UCLA to Michigan on  October 29th, 1969
+	
+	
+	Birthplace of the internet, 1969
+	at 10:30 p.m. 29 October 1969, the first ARPANET message was sent from UCLA sit
+	to Stanford Research Institute. Based on Packet switching and
+	dynamic resource allocation, the sharing of information digitally
+	from this first node of ARPANET launched the Internet revolusion.
+	
+	
+	IL high perfromance computing
+	SO  database
+	UCLA simulation
+	
+	
+	Interface Message Processior [ first switch machine on the internet
+	located at UCLA 1969)...
+	
+	===============================
+	CERN - High-energy (physics)
+	 The beginning of the WWW Robert Cailliau & Tim
+	 co-founter of the world wide web 1990 [no links no html back then]
+	 
+	 1994 is when the www came out of the academic world to thw public
+	 
+	 mozilla mosaic, gopher... were easer to install.
+	 
+	 CERN developed browsers and servers - with
+	 
+	 
+	 
+	 The first web server in American was the Standord Linear Accellerator (SLAC)
+	  ...first search engine-----------
+	  It was a database of 300.000 research paper
+	  dr. Paul Kunz build the first search engine.
+	   in December 12, 1991
+	   =========================
+	   1993:Gopher is Dominant
+	    
+		Mosiac the Explosive Growth of the Web
+		
+		Mosaic -Netscape - Mozilla - Firefox
+		 Mosaic was the first "Consumer" web browser developed at NCSA
+		 NCSA create the httpd web server 
+		 =====================================
+		 Joseph Hardin --University of Michigan
+		 
+	============================
+	1994: year of the web
+	 Netscape founded
+	 berners-Lee founded w3c at MIT
+	 windows 95 with built in browser
+	 * now it is no longer research , there is money coming in
+	 
+	 Netscape, JavaScript and FireFox.
+	 
+	 Mitchell Baker: The Mozilla Foundation (firefox)
+	 
+	 Brendan Erich --The enventor of JavaScript
+	 
+	 1995, Brendan joined Mozilla.  He was brought
+	 to come up with a language for the html and the web to use.
+	 
+	 2005 web 2.0 revolution.
+	 ================================
+	 html5, javascript
+	 MS were selling there web browser.
+	 Netscape influenced microsoft to ship their broswer for free
+	 w3c was founded october 1994
+	 let by Tim Berners=leee who moved from CERN to MIT
+	 ================================================
+	 The Modern Internet
+	 ===================
+	 
+	 Fiber optic boom in the late 1990's
+	 distance is becoming less important
+	 Many national backbone owners ...cooperations
+	 
+	 
+	 A History Of Open Source
+	 Richard Stallman fsf
+	 Rasmus Lerdorf inventor of php
+	 Brian Behlendorf  
+	 
+	 ======================================
+
+	 
+	 
+	 
+	  
+	 
+	  
+	   
+	  
+	 
+	 
+	 
+	 
+ 
+ 
