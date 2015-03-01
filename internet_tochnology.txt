@@ -1,0 +1,201 @@
+The Internet Technology
+========================
+The Link Layer
+---------------
+store and forward networking ====60s and 70s
+hops are defined by geography trying to minimize cost
+- innovation happend was packet network. network sharing
+and how to deal with outages. speed....
+ packet switching took 20+ years to perfect.
+ how to move the message efficiently over the internet.
+ . shared network infrastructure focuses only on packets
+ the notion of hops and intermediate computers didn't go away.
+ to solve the problems that can arise in a shared network, they
+ came up with a layered model.
+ 
+ the big problem is getting data reliable.
+ if we break it into small pieces, we have a better solution
+ 
+ TCP/IP model (4 layers) --- popular
+ OSI model  (7 layers)
+ 
+ - develop documents on these pieces
+  how they work and interact with each other.
+  IETF  www.ietf.org
+  RFCs "request for comments"
+  Layerd Architecture
+  ====================
+  Application, Transport, Internet, Link]
+  
+  The link Layer: only worries about moving the data
+  from one hop to another (the connection from one computer
+  to another computer) this could be one mile, a few feets
+  a fibre optic a copper ....etc.
+  
+  problems solved by the Link Layer.
+   how does gata get pushed onto a link
+   How is th link shared
+   [Etherenet, Wireless Ethernet]
+   
+   Each card (wirels has a serial number 
+   6 2 digits number.  these numbers are good to get
+   a connection from one hub to another.
+   0f:21:64:12:63:1a
+   
+   the mac address of the sender and receiver is encoded in
+   the packet.
+   
+   **then the router takes that packet and routes it on a different link layer.
+Sharing Nicely -Avoiding chaos
+
+. CSMA/CD carrier sense Media Access with collision detection
+.to avoid garbled messages, systems must observr "rules" (protocols)
+. Ethernet rules are simple
+
+- listen
+- wait for silence
+- Begin Transmitting data
+-  Listen for your own data
+- If you can't hear your data clearly, assume a collison, stop and
+  wait before trying again.
+ - Each system waits a different amount of time to avoid "too
+
+
+Robert Metcalf ; the person who invented Ethernet
+at  Xerox PARC (Palo Alto Research Center)
+Inspired by an earlier wireless network called Aloha from the
+university of hawii
+ * Ethernet becomes shared when you plug it into a hub or
+ switch...
+======================================================
+The Ethernet Story --- Bom Metcalfe - Univ of Austin Texas
+A building full with computers and people. how to get them connected.
+
+segnet project
+bravo text editor
+aloha net radio network (University of Hawaii) solved lots of problems.
+randomize retransmission --how to share a cable. inspired by Aloha net.
+ethernet cable...manchester encoding.
+carrier sense...check to see if someone else is sending at the same time
+each packet would carry two addresses; one for the source and one for
+the destination 8 bits each...
+ do redundancy check at the receiving end ...check-sum
+ 
+ Tat Lam designed the passive electronic components
+ David ladel
+ 
+ fast ethernet 100Gb/second.. terabit ethernet is the future.
+ =================================================
+ Coax, ethernet wire built by Robert Metcalf was
+ inspired by wireless
+he founded 3com
+
+====================================================
+lots of engineers were working on the link layer problem
+lots of engineers focused on the IP layer(Internet)
+======================================
+Link Layer
+===============
+Goal: Gets your data from this computer to the other computer half way across the world.
+Each router knows about nearby routers
+ip is bes effort - it is OK to drop data if things go bad.
+
+IP Addresses:
+============
+Ip address Format is four numbers with dots -each number 1-255(32bits)
+the address is broken into two parts
+
+network:like area code
+
+host
+
+While the data is traversing the internet - all that matters is the network number
+prefix is the first two numbers...
+the last two numbers are meaningful inside the local network
+
+Internetwork IP ( one network inside the big network)
+
+Routers maintain Router Tables
+  list of where t osend packets based on destination network address:
+  bandwidth on adjacent links;
+  traffic on adjacent links;
+  state of neighbour.
+  ==========================
+  DHCP= Dynamic Host Configuration Protocol
+  
+  Non-Routable Addresses
+  . A typical home router does NAT
+  ========================================
+  Peering into the Internet
+  =====================
+  tracert
+  . Each IP packet had a field called "Time to Live"- TTL
+  The TTL is used to deal with loops in the network - normally if
+  routers got confused and ended up with a loop - the network would clog
+  up rapidly.##########TTL is a field that routers change
+  everytime a packet goes through a router the number decreases
+  if the TTL hits 0, then the router discards the packet################
+  #########################################
+  How Traceroute Works.
+  . Normal packets are sent with a time to live (TTL) of 255 hops.
+  . Trace route sends a packet with TTL=1, TTL=2,...
+  . So each packet gets part-way  there and then gets dropped and
+  traceroute gets a notification of where the drop happens.
+  . This builds a map of the nodes that a packet visits when crossing the internet.
+  ==========================================
+  The perfect is the enemy of the good
+  
+  . IP DiesL best effort to get data across bunch of hops from one network to another network.
+  . IP Does Not: Guarantee delivery.
+  
+  
+  Vint Cerf: (the father of the ARPANET) a Brief History of packets
+     [ design of ARPANET, )
+	 
+	 
+
+	 larry  Roberts [packet switching]			1966
+	  demonstrated the packet transmission from one place to another
+	  
+	  tcp is a manager of reliability on an end to end basis
+	  first impemenation of tcp 1973, lots of bugs that got
+	  fixed by 1978
+	  
+	  1978 tcp is separated from ip and upd.
+	  
+	  
+	  NSFNet
+	  
+	  
+	  
+
+
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+  
+  
+  
+  
+  
+ 
+ 
+ 
+ 

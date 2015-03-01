@@ -1,0 +1,32 @@
+knife-flip: Mange environments for nodes
+Chef Supermarket ; prebuilt recipes.
+ supermarket.chef.com
+  i.e. a recipe for automating chef client run
+  
+  Unattended install
+  ================
+  Work Flow:
+  
+  . nodes should be bootstrapped and managed from the workstation
+  . Nodes should be assigned roles and environments
+  . Attributes specific to roles/environments should be configures accordingly.
+  . for auto scaling environments such as AWS "unattended" bootstrapping should be used.
+============================================Work Flow=====================
+Unattending Bootstrapping
+
+. Must be able to authenticate to the chef server
+.                   configure a run_list
+.                    access the chef-validaor.pem
+.                    a unique node name
+.                   client.rbfile must have proper configuration...
+. Modify the file.json in /etc/chef to
+
+
+
+
+cloud init program
+=============================
+Chef Roles:
+a Role contains attributes as well as recipes to be run.
+It is a convient way to manages multiple servers. simply apply
+a role to multile servers.....
